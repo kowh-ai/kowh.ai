@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kowh.ai — Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f1012;
+            --card-bg: #181a1f;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent: #facc15; /* Warm Kowhai Yellow */
+            --accent-glow: rgba(250, 204, 21, 0.15);
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 540px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 48px 36px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 60px var(--accent-glow);
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .flower-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 24px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0 4px 12px rgba(250, 204, 21, 0.2));
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .flower-container svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(250, 204, 21, 0.1);
+            color: var(--accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 6px 14px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(250, 204, 21, 0.2);
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        h1 span {
+            color: var(--accent);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .status-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 8px rgba(250, 204, 21, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
+            }
+        }
+
+        .footer {
+            margin-top: 36px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Kowhai Flower Botanical Vector Art -->
+        <div class="flower-container">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Stem / Branch -->
+                <path d="M50 10C50 35 40 55 25 80" stroke="#4ade80" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M42 42C48 50 55 60 70 75" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round"/>
+                
+                <!-- Kowhai Blossom Cluster 1 -->
+                <g transform="translate(20, 50)">
+                    <path d="M5 0C2 10 2 20 5 28C8 20 8 10 5 0Z" fill="#facc15"/>
+                    <path d="M12 4C10 14 12 24 18 30C16 20 14 12 12 4Z" fill="#fde047"/>
+                    <path d="M-2 4C0 14 -2 24 -8 30C-6 20 -4 12 -2 4Z" fill="#eab308"/>
+                    <!-- Hanging tubular petals typical of kōwhai -->
+                    <ellipse cx="5" cy="28" rx="4" ry="7" fill="#facc15" transform="rotate(10 5 28)"/>
+                    <ellipse cx="15" cy="30" rx="3.5" ry="6" fill="#fef08a" transform="rotate(25 15 30)"/>
+                    <ellipse cx="-6" cy="30" rx="3.5" ry="6" fill="#ca8a04" transform="rotate(-15 -6 30)"/>
+                </g>
+
+                <!-- Kowhai Blossom Cluster 2 (Lower Right) -->
+                <g transform="translate(55, 58) scale(0.8)">
+                    <path d="M5 0C2 10 2 20 5 28C8 20 8 10 5 0Z" fill="#facc15"/>
+                    <path d="M12 4C10 14 12 24 18 30C16 20 14 12 12 4Z" fill="#fde047"/>
+                    <ellipse cx="5" cy="28" rx="4" ry="7" fill="#facc15"/>
+                    <ellipse cx="14" cy="30" rx="3.5" ry="6" fill="#fef08a"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="badge">Launching Soon</div>
+        <h1>Welcome to <span>kowh.ai</span></h1>
+        <p>Something extraordinary is in the works. Check back soon for updates.</p>
+        
+        <div class="status-box">
+            <div class="pulse-dot"></div>
+            <span>System under construction</span>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 kowh.ai &bull; All rights reserved
+        </div>
+    </div>
+
+</body>
+</html>
