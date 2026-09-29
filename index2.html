@@ -1,146 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kowh.ai Landing Page</title>
+    <title>kowh.ai — Coming Soon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #2c2c2c;
-            --card-bg: #444444;
-            --accent-color: #c4a35a;
-            --text-color: #e0e0e0;
-            --font-family: 'Arial', sans-serif; /* Standard font for simplicity */
-        }
-
         body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--font-family);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .monitor-frame {
-            background-color: #000;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            font-family: 'Inter', sans-serif;
             position: relative;
+            isolation: isolate;
+            background-color: #eee9dc;
+            color: #203b30;
         }
-
-        .monitor-content {
-            background-color: #1a1a1a; /* Inner screen color */
-            width: 60vw; /* Responsive width */
-            height: 40vw; /* Responsive height to maintain aspect ratio */
-            max-width: 1000px;
-            max-height: 666px;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Decorative grid lines for the screen */
-        .monitor-content::before {
+        body::before,
+        body::after {
             content: '';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at center, #2a2a2a 1px, transparent 1px);
-            background-size: 50px 50px;
-            opacity: 0.5;
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
         }
-
-        .logo-main {
-            width: 20%; /* Proportional size */
-            height: auto;
-            margin-bottom: 20px;
-            filter: drop-shadow(0 0 5px rgba(196, 163, 90, 0.3));
+        body::before {
+            z-index: -2;
+            background: url('kowhai.watercolour.png') center / cover no-repeat;
         }
-
-        .domain-text {
-            font-size: 3vw; /* Responsive font size */
-            font-weight: bold;
-            margin: 0;
-            letter-spacing: 2px;
-            color: var(--accent-color);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        body::after {
+            z-index: -1;
+            background: linear-gradient(90deg, rgba(250, 248, 239, 0.92) 0%, rgba(250, 248, 239, 0.78) 42%, rgba(250, 248, 239, 0.16) 100%);
         }
-
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid #555;
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            width: 15%; /* Proportional size */
-            cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        @media (max-width: 640px) {
+            body::after {
+                background: linear-gradient(180deg, rgba(250, 248, 239, 0.88) 0%, rgba(250, 248, 239, 0.66) 58%, rgba(250, 248, 239, 0.36) 100%);
+            }
         }
-
-        .card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-        }
-
-        .logo-card {
-            width: 80%; /* Inside the card */
-            height: auto;
-        }
-
-        /* Stand for the monitor */
-        .monitor-stand {
-            width: 20%;
-            height: 30px;
-            background-color: #1a1a1a;
-            margin: 0 auto;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-        .monitor-base {
-            width: 40%;
-            height: 10px;
-            background-color: #333;
-            margin: 0 auto;
-            border-radius: 5px;
-        }
-
-        /* Replace these placeholders with your actual image paths */
-        /* For example: src="images/logo-main.png" */
     </style>
 </head>
-<body>
+<body class="h-full flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
 
-    <div class="monitor-container">
-        <div class="monitor-frame">
-            <div class="monitor-content">
-                <!-- Main Kowhai Logo (Line Art) -->
-                <img src="path-to-your-kowhai-line-art-logo.png" alt="kowh.ai Main Logo" class="logo-main">
-                
-                <!-- Domain Name -->
-                <h1 class="domain-text">kowh.ai</h1>
-                
-                <!-- Card with Logo Icon -->
-                <div class="card">
-                    <img src="path-to-your-kowhai-icon.png" alt="kowh.ai Icon" class="logo-card">
+    <header class="w-full max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-lg font-semibold tracking-wider text-[#203b30]">
+            kowh<span class="text-[#875d27]">.ai</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-white/70 text-[#294b3d] border border-white/70">
+                <span class="w-1.5 h-1.5 mr-1.5 rounded-full bg-[#547c52] animate-pulse"></span>
+                In Development
+            </span>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center px-6 py-8">
+        <div class="max-w-6xl w-full mx-auto">
+            <div class="max-w-xl text-left space-y-8">
+
+                <div class="space-y-3">
+                    <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight text-[#203b30]">
+                        kowh<span class="text-[#875d27]">.ai</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-[#3f584b] font-light">
+                        Personal site and workspace coming soon.
+                    </p>
+                </div>
+
+                <div class="w-12 h-px bg-[#203b30]/25"></div>
+
+                <div class="text-sm text-[#405749]">
+                    Need to reach out? Drop a note at
+                    <a href="mailto:brett@kowh.ai" class="text-[#76501d] hover:text-[#513512] transition-colors underline underline-offset-4">brett@kowh.ai</a>
                 </div>
             </div>
         </div>
-        <!-- Monitor Stand and Base -->
-        <div class="monitor-stand"></div>
-        <div class="monitor-base"></div>
-    </div>
+    </main>
 
+    <footer class="w-full max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center text-xs text-[#405749] border-t border-[#203b30]/15">
+        <div>
+            &copy; <span id="year"></span> kowh.ai. All rights reserved.
+        </div>
+        <div class="mt-2 sm:mt-0">
+            Hosted on kowhub Pages
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

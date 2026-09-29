@@ -1,0 +1,92 @@
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kowh.ai — Coming Soon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Custom smooth transition and subtle background grid */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0c;
+            color: #f3f4f6;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="h-full flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <header class="w-full max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-lg font-semibold tracking-wider text-white/90">
+            kowh<span class="text-indigo-400">.ai</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <span class="w-1.5 h-1.5 mr-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                In Development
+            </span>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-6 -mt-12">
+        <div class="max-w-xl w-full text-center space-y-8">
+            
+            <!-- Geometric minimal badge / icon -->
+            <div class="inline-flex p-4 rounded-2xl bg-white/[0.03] border border-white/10 shadow-2xl backdrop-blur-md mb-2">
+                <svg class="w-8 h-8 text-indigo-400 animate-spin" style="animation-duration: 20s;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+                </svg>
+            </div>
+
+            <!-- Typography & Domain Title -->
+            <div class="space-y-3">
+                <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight text-white">
+                    kowh<span class="text-indigo-400">.ai</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-neutral-400 font-light">
+                    Personal site and workspace coming soon.
+                </p>
+            </div>
+
+            <!-- Divider -->
+            <div class="w-12 h-px bg-white/10 mx-auto"></div>
+
+            <!-- Contact/Email hint -->
+            <div class="text-sm text-neutral-500">
+                Need to reach out? Drop a note at 
+                <a href="mailto:brett@kowh.ai" class="text-indigo-400 hover:text-indigo-300 transition-colors underline underline-offset-4">brett@kowh.ai</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="w-full max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center text-xs text-neutral-600 border-t border-white/[0.04]">
+        <div>
+            &copy; <span id="year"></span> kowh.ai. All rights reserved.
+        </div>
+        <div class="mt-2 sm:mt-0">
+            Hosted on kowhub Pages
+        </div>
+    </footer>
+
+    <script>
+        // Dynamically set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
