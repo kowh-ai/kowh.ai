@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Möblierte 53-m²-Wohnung am Arkonaplatz in Berlin-Mitte zur Zwischenmiete vom 20. Januar bis 18. Mai 2027.">
-  <title>Möblierte Wohnung am Arkonaplatz zur Zwischenmiete</title>
+  <meta name="description" content="Möblierte 53-m²-Wohnung am Arkonaplatz in Berlin-Mitte für vier Monate ab Januar 2027.">
+  <title>Möblierte Wohnung am Arkonaplatz – Zwischenmiete 2027</title>
   <style>
     :root {
       color-scheme: light;
@@ -67,14 +67,7 @@
       margin: 0 auto;
     }
 
-    .photo-collage-image {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
     .hero-copy {
-      max-width: none;
       padding: clamp(28px, 6vw, 68px);
       color: white;
     }
@@ -89,7 +82,7 @@
     }
 
     h1 {
-      max-width: 650px;
+      max-width: 700px;
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(2.7rem, 7vw, 5.6rem);
@@ -99,7 +92,7 @@
     }
 
     .hero-copy > p:last-child {
-      max-width: 530px;
+      max-width: 650px;
       margin: 20px 0 0;
       color: rgb(255 255 255 / 88%);
       font-size: clamp(1rem, 2vw, 1.18rem);
@@ -250,9 +243,23 @@
     }
 
     .closing p {
+      max-width: 720px;
       margin: 0 auto;
-      max-width: 650px;
       color: rgb(255 255 255 / 84%);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 24px;
+      margin-top: 18px;
+    }
+
+    .contact-links a {
+      color: white;
+      font-weight: 650;
+      text-underline-offset: 4px;
     }
 
     .photos {
@@ -260,20 +267,39 @@
     }
 
     .photos h2 {
-      margin-bottom: 16px;
+      margin-bottom: 8px;
     }
 
-    .photo-collage {
-      margin: 0;
+    .photos-intro {
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+
+    .gallery {
+      columns: 3 260px;
+      column-gap: 16px;
+    }
+
+    .gallery figure {
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 16px;
       overflow: hidden;
+      break-inside: avoid;
       border: 1px solid var(--line);
-      border-radius: 14px;
+      border-radius: 12px;
       background: var(--card);
       box-shadow: 0 12px 35px rgb(36 53 46 / 5%);
     }
 
-    .photo-collage figcaption {
-      padding: 12px 16px;
+    .gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery figcaption {
+      padding: 10px 14px;
       color: var(--muted);
       font-size: 0.85rem;
     }
@@ -301,8 +327,8 @@
       }
 
       .fact:nth-child(3) {
-        border-left: 0;
         border-top: 1px solid var(--line);
+        border-left: 0;
       }
 
       .fact:nth-child(4) {
@@ -339,42 +365,42 @@
     </div>
 
     <section class="hero" aria-labelledby="page-title">
-      <img class="hero-image" src="arkonaplatz/arkonaplatz-flat.jpg" alt="Ansicht des Hauses mit dem vermieteten Balkon markiert">
+      <img class="hero-image" src="arkonaplatz/wohnzimmer1.jpg" alt="Blick in den hellen Wohn- und Arbeitsraum">
       <div class="hero-copy">
-        <p class="eyebrow">Möblierte Wohnung zur Zwischenmiete</p>
+        <p class="eyebrow">Möblierte Wohnung · 4 Monate</p>
         <h1 id="page-title">Wohnen am Arkonaplatz</h1>
-        <p>Ein schönes, voll möbliertes Zuhause in Berlin-Mitte – mit Balkon, ruhigem Schlafzimmer und allem, was man zum Ankommen braucht.</p>
+        <p>Ein Zuhause mit Balkon mitten im Kiez – ruhig, voll möbliert und ideal zum Ankommen oder konzentrierten Arbeiten.</p>
       </div>
     </section>
 
     <section class="overview" aria-label="Wohnungsüberblick">
       <div class="fact"><strong>53 m²</strong><span>Wohnfläche</span></div>
-      <div class="fact"><strong>950 €</strong><span>Warmmiete pro Monat</span></div>
-      <div class="fact"><strong>1–2 Personen</strong><span>Geeignet für eine Person oder ein Paar</span></div>
-      <div class="fact"><strong>Ab 3 Monaten</strong><span>Mindestaufenthalt</span></div>
+      <div class="fact"><strong>980 €</strong><span>Warmmiete pro Monat</span></div>
+      <div class="fact"><strong>1–2 Personen</strong><span>Für eine Person oder ein Paar</span></div>
+      <div class="fact"><strong>4 Monate</strong><span>20. Januar bis 18. Mai 2027</span></div>
     </section>
 
     <div class="content">
       <section aria-labelledby="about-title">
         <h2 id="about-title">Ein Zuhause mit Kiezgefühl</h2>
-        <p class="intro">Ich vermiete meine schöne Wohnung am Arkonaplatz für 4 Monate ab 19. Januar 2027.</p>
+        <p class="intro">Ich vermiete meine schöne Wohnung direkt am Arkonaplatz für vier Monate ab Januar 2027. Die 53-m²-Wohnung ist voll möbliert und bietet einen Balkon zum Platz.</p>
 
         <div class="details">
           <h3>Die Wohnung</h3>
           <ul>
             <li>Großer Wohn- und Arbeitsraum mit offener Küche</li>
             <li>Küche mit Induktionsherd und Geschirrspüler</li>
-            <li>Kleines, sehr ruhiges Schlafzimmer zum Innenhof</li>
-            <li>Bett mit 1,60 × 2 m Liegefläche</li>
+            <li>Ruhiges Schlafzimmer zum Innenhof mit 1,60 × 2 m Bett</li>
             <li>Großes Bad mit Badewanne und Waschmaschine</li>
-            <li>Balkon und ein Gästefahrrad inklusive</li>
-            <li>Voll möbliert; wegen der Aufteilung für eine Person oder ein Paar geeignet</li>
+            <li>Balkon mit Blick auf den Arkonaplatz</li>
+            <li>Voll möbliert; passend für eine Person oder ein Paar</li>
+            <li>Im 2. Stock, ohne Aufzug</li>
           </ul>
         </div>
 
         <div class="details">
           <h3>Die Lage</h3>
-          <p>Granseer Straße direkt am Arkonaplatz in Berlin-Mitte, an der Ecke Prenzlauer Berg und Wedding. Freitags ist Foodmarkt, sonntags Trödelmarkt. Die Wohnung liegt im 2. Stock – ohne Aufzug.</p>
+          <p>Direkt am Arkonaplatz in Berlin-Mitte, an der Ecke Prenzlauer Berg und Wedding. In sechs Gehminuten erreichst Du die U8 am Bernauer Platz sowie die Tramlinien M10, M1 und M12. Freitags gibt es einen Foodmarkt, sonntags einen Trödelmarkt.</p>
         </div>
       </section>
 
@@ -391,7 +417,11 @@
           </div>
           <div>
             <dt>Warmmiete</dt>
-            <dd>950 € monatlich</dd>
+            <dd>980 € monatlich</dd>
+          </div>
+          <div>
+            <dt>Miete für zwei Personen</dt>
+            <dd>Zusätzlich 100 € monatlich</dd>
           </div>
           <div>
             <dt>Kaution</dt>
@@ -402,20 +432,60 @@
             <dd>Heizung, Warmwasser, Strom und WLAN</dd>
           </div>
         </dl>
+        <p class="note">Die Wohnung ist mein Zuhause und kein Ort für Partys. Ich suche ruhige, zuverlässige Menschen, die sie ebenfalls wie ein Zuhause behandeln möchten.</p>
       </aside>
     </div>
 
     <section class="closing" aria-labelledby="contact-title">
       <h2 id="contact-title">Interesse?</h2>
-      <p>Ruft mich an – auch über Signal oder WhatsApp – oder schreibt mir eine Mail, um einen Besichtigungstermin zu vereinbaren oder Fragen zu stellen. Ich freue mich auf Euch!<br><br>Liebe Grüße, Beate</p>
+      <p>Ruf mich an – auch über Signal oder WhatsApp – oder schreib mir für einen Besichtigungstermin oder bei Fragen. Ich freue mich auf Euch!<br><br>Beate</p>
+      <div class="contact-links">
+        <a href="tel:+4917620954598">+49 176 20954598</a>
+        <a href="mailto:arkonaplatz@bigsook.com">arkonaplatz@bigsook.com</a>
+      </div>
     </section>
 
     <section class="photos" aria-labelledby="photos-title">
       <h2 id="photos-title">Fotos der Wohnung</h2>
-      <figure class="photo-collage">
-        <img class="photo-collage-image" src="arkonaplatz/arkonaplatz.jpg" alt="Fotocollage mit mehreren Ansichten der Wohnung, dem Balkon und der Umgebung">
-        <figcaption>Weitere Ansichten der Wohnung, des Balkons und der Umgebung.</figcaption>
-      </figure>
+      <p class="photos-intro">Einblicke in Wohnraum, Schlafzimmer, Bad, Balkon und Umgebung.</p>
+      <div class="gallery">
+        <figure>
+          <img src="arkonaplatz/badzimmer1.jpg" alt="Badezimmer mit Badewanne, Waschmaschine und Waschbecken" loading="lazy">
+          <figcaption>Bad mit Badewanne und Waschmaschine</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/balkon1.jpg" alt="Blick vom Balkon über die Baumkronen am Arkonaplatz" loading="lazy">
+          <figcaption>Blick vom Balkon auf den Platz</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/balkon2.jpg" alt="Balkon mit Pflanzen und Sitzgelegenheit" loading="lazy">
+          <figcaption>Der begrünte Balkon</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/balkon3.jpg" alt="Blick durch die Balkontür auf den Balkon" loading="lazy">
+          <figcaption>Balkon und Blick ins Grüne</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/schlarfzimmer1.jpg" alt="Ruhiges Schlafzimmer mit Doppelbett" loading="lazy">
+          <figcaption>Ruhiges Schlafzimmer zum Innenhof</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/winter1.jpg" alt="Winterlicher Blick vom Balkon auf den Arkonaplatz" loading="lazy">
+          <figcaption>Arkonaplatz im Winter</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/winter2.jpg" alt="Winterlicher Blick in den verschneiten Innenhof" loading="lazy">
+          <figcaption>Blick in den Innenhof im Winter</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/wohnzimmer1.jpg" alt="Wohn- und Essbereich mit großen Fenstern" loading="lazy">
+          <figcaption>Wohn- und Essbereich</figcaption>
+        </figure>
+        <figure>
+          <img src="arkonaplatz/wohnzimmer2.jpg" alt="Gemütlicher Wohnbereich mit Sofa und Tisch" loading="lazy">
+          <figcaption>Wohnbereich</figcaption>
+        </figure>
+      </div>
     </section>
 
     <footer>Zwischenmiete am Arkonaplatz · Berlin-Mitte</footer>
